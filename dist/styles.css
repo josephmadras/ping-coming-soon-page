@@ -45,7 +45,6 @@ body * {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 7rem 0;
-  height: 100vh;
 }
 
 .main__dashboard {
@@ -101,6 +100,7 @@ body * {
 .main__copyright {
   font-size: 0.8rem;
   padding: 2rem 0;
+  margin-bottom: 0.2rem;
 }
 
 .hero {
@@ -159,5 +159,22 @@ body * {
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    height: 100%;
+  }
+  .main__dashboard img {
+    width: 80%;
+  }
+  .hero__form input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .hero__form button {
+    display: block;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
