@@ -47,7 +47,7 @@ body {
       border-radius: 50%;
       padding: 0.5rem;
       cursor: pointer;
-
+      transition: background-color 100ms ease-in-out;
       &:not(:last-child) {
         margin-right: 0.7rem;
       }
@@ -55,6 +55,7 @@ body {
       &:hover {
         background-color: $blue;
         color: #fff;
+        border: none;
       }
     }
 

@@ -80,6 +80,8 @@ body * {
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
+  -webkit-transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
 }
 
 .main__social-media > div:not(:last-child) {
@@ -89,6 +91,7 @@ body * {
 .main__social-media > div:hover {
   background-color: #4f7df3;
   color: #fff;
+  border: none;
 }
 
 .main__social-media i {
