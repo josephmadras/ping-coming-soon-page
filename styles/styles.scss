@@ -24,16 +24,47 @@ body {
 .main {
   @include flex-center;
   flex-direction: column;
+  padding-top: 7rem 0;
+  height: 100vh;
 
   &__dashboard {
-    width: 40rem;
+    width: 30rem;
     img {
       width: 100%;
     }
   }
 
+  &__social-media {
+    color: $blue;
+    display: flex;
+    padding-top: 3rem;
+
+    > div {
+      @include flex-center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid $gray;
+      border-radius: 50%;
+      padding: 0.5rem;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 0.7rem;
+      }
+
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+
+    i {
+      font-size: 0.9rem;
+    }
+  }
   &__copyright {
     font-size: 0.8rem;
+    padding: 2rem 0;
   }
 }
 
@@ -55,11 +86,11 @@ body {
   &__form {
     padding-top: 2rem;
     input {
-      width: 25rem;
-      padding: 0.6rem 0.9rem;
+      width: 20rem;
+      padding: 0.8rem 0.9rem;
       text-align: left;
       border: 1px solid $paleBlue;
-      border-radius: 1.2rem;
+      border-radius: 2rem;
       outline: none;
 
       &::placeholder {
@@ -68,8 +99,8 @@ body {
     }
 
     button {
-      padding: 0.6rem 2rem;
-      border-radius: 1.2rem;
+      padding: 0.8rem 3rem;
+      border-radius: 2rem;
       background-color: $blue;
       border: none;
       font-weight: 600;
