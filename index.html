@@ -11,7 +11,21 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./dist/styles.css" />
+
     <title>Frontend Mentor | Ping coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,28 +40,30 @@
     </style>
   </head>
   <body>
-    <main>
-      <header>
-        <div>
+    <main class="main">
+      <header class="header">
+        <div class="header__logo">
           <img src="./images/logo.svg" alt="logo" />
         </div>
       </header>
       <section class="hero">
-        <h1>We are launching soon!</h1>
-        <span>Subscribe and get notified</span>
-        <form>
+        <h1 class="hero__title">We are launching <strong>soon!</strong></h1>
+        <span class="hero__subscribe-message">Subscribe and get notified</span>
+        <form class="hero__form">
           <input type="text" placeholder="Your email address..." />
           <button>Notify Me</button>
         </form>
       </section>
-      <div>
+      <div class="main__dashboard">
         <img
           src="./images/illustration-dashboard.png"
           alt="Dashboard illustration"
         />
       </div>
 
-      <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+      <div class="main__copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
     </main>
 
     <footer>
