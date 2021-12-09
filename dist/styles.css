@@ -20,10 +20,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  min-width: 100%;
-  padding: 1rem 2rem;
+  padding-top: 3.5714rem;
+  padding-left: 1.428571rem;
   font-size: 1.42857rem;
   font-family: "Libre Franklin", sans-serif;
+  overflow: hidden;
 }
 
 body * {
@@ -60,7 +61,7 @@ body * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 3rem;
+  padding-top: 2.2rem;
 }
 
 .main__social-media > div {
@@ -99,7 +100,7 @@ body * {
 
 .main__copyright {
   font-size: 0.8rem;
-  padding: 2rem 0;
+  padding: 0.7rem 0 1rem 0;
   margin-bottom: 0.2rem;
 }
 
