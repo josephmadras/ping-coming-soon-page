@@ -26,7 +26,7 @@ body {
   flex-direction: column;
 
   &__dashboard {
-    width: 50rem;
+    width: 40rem;
     img {
       width: 100%;
     }
@@ -49,6 +49,33 @@ body {
   }
 
   &__subscribe-message {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  &__form {
+    padding-top: 2rem;
+    input {
+      width: 25rem;
+      padding: 0.6rem 0.9rem;
+      text-align: left;
+      border: 1px solid $paleBlue;
+      border-radius: 1.2rem;
+      outline: none;
+
+      &::placeholder {
+        color: $paleBlue;
+      }
+    }
+
+    button {
+      padding: 0.6rem 2rem;
+      border-radius: 1.2rem;
+      background-color: $blue;
+      border: none;
+      font-weight: 600;
+      color: #fff;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      cursor: pointer;
+    }
   }
 }
